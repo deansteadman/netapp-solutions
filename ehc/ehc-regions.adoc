@@ -25,5 +25,4 @@ include::../_include/azure-region-support.adoc[]
 
 == GCP Region Availability
 
-GCP region availability will be released when GCP enters public availability.
-//include::../_include/gcp-region-support.adoc[]
+include::../_include/gcp-region-support.adoc[]
