@@ -33,9 +33,12 @@ link:azure/azure-guest.html[Details]
 ^| ANF
 link:azure/azure-native-overview.html[Details]
 //
-.^| *GCP*
+.^| *Google Cloud*
 ^| CVO
-link:gcp/gcp-guest.html[Details]
-^| GCNV
-//link:https://www.netapp.com/blog/cloud-volumes-service-google-cloud-vmware-engine/[Details]
+Google Cloud NetApp Volumes
+//link:https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-connect-workload-vm-to-netapp-volumes/[Details]
+link:https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-connect-workload-vm-to-netapp-volumes[Details]
+^| Google Cloud NetApp Volumes
+//link:https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-cloud-volumes-datastores-gcve/[Details]
+link:https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-cloud-volumes-datastores-gcve[Details]
 |===
