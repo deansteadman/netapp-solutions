@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Learn more about the solutions that NetApp brings to GCP.
+Learn more about the solutions that NetApp brings to Google Cloud.
 
 VMware defines the cloud workloads into one of three categories:
 
