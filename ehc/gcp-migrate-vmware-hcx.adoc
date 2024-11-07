@@ -5,7 +5,7 @@ keywords: gcp, gcve, hybrid multicloud, migrate, vmware hcx, hcx, google cloud, 
 summary:
 ---
 
-= Migrate workloads to NetApp Cloud Volume Service datastore on Google Cloud VMware Engine using VMware HCX - Quickstart guide
+= Migrate workloads to Google Cloud NetApp Volumes on Google Cloud VMware Engine using VMware HCX - Quickstart guide
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,18 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-One of the most common use cases for the Google Cloud VMware Engine and Cloud Volume Service datastore is the migration of VMware workloads. VMware HCX is a preferred option and provides various migration mechanisms to move on-premises virtual machines (VMs) and its data to Cloud Volume Service NFS datastores.
+One of the most common use cases for the Google Cloud VMware Engine and Google Cloud NetApp Volumes is the migration of VMware workloads. VMware HCX is a preferred option and provides various migration mechanisms to move on-premises virtual machines (VMs) and its data to Google Cloud NetApp Volumes NFS datastores.
 
 Author(s): NetApp Solutions Engineering
 
-== Overview: Migrating virtual machines with VMware HCX, NetApp Cloud Volume Service datastores, and Google Cloud VMware Engine (GCVE)
+== Overview: Migrating virtual machines with VMware HCX, Google Cloud NetApp Volumes, and Google Cloud VMware Engine (GCVE)
 
 VMware HCX is primarily a migration platform that is designed to simplify application migration, workload rebalancing, and even business continuity across clouds. It is included as part of Google Cloud VMware Engine Private Cloud and offers many ways to migrate workloads and can be used for disaster recovery (DR) operations.  
 
-This document provides step-by-step guidance for provisioning Cloud Volume Service datastore followed by downloading, deploying, and configuring VMware HCX, including all its main components in on-premises and the Google Cloud VMware Engine side including Interconnect, Network Extension, and WAN optimization for enabling various VM migration mechanisms.
+This document provides step-by-step guidance for provisioning Google Cloud NetApp Volumes followed by downloading, deploying, and configuring VMware HCX, including all its main components in on-premises and the Google Cloud VMware Engine side including Interconnect, Network Extension, and WAN optimization for enabling various VM migration mechanisms.
 
 [NOTE]
-VMware HCX works with any datastore type as the migration is at the VM level. Hence this document is applicable to existing NetApp customers and non-NetApp customers who are planning to deploy Cloud Volume Service with Google Cloud VMware Engine for a cost-effective VMware cloud deployment.
+VMware HCX works with any datastore type as the migration is at the VM level. Hence this document is applicable to existing NetApp customers and non-NetApp customers who are planning to deploy Google Cloud NetApp Volumes with Google Cloud VMware Engine for a cost-effective VMware cloud deployment.
 
 .High-level steps
 [%collapsible]
@@ -53,7 +53,7 @@ HCX advanced is the default option and VMware HCX Enterprise edition is also ava
 * Migration of VMs and associated data from the on-premises VMware vSphere- enabled data center requires network connectivity from the data center to the SDDC environment. Before migrating workloads, https://cloud.google.com/vmware-engine/docs/networking/howto-connect-to-onpremises[set up a Cloud VPN or Cloud Interconnect connection^] between the on-premises environment and the respective private cloud.
 * The network path from on-premises VMware vCenter Server environment to the Google Cloud VMware Engine private cloud must support the migration of VMs by using vMotion.
 * Make sure the required https://ports.esp.vmware.com/home/VMware-HCX[firewall rules and ports^] are allowed for vMotion traffic between the on-premises vCenter Server and SDDC vCenter. 
-* Cloud Volume Service NFS volume should be mounted as a datastore in Google Cloud VMware Engine.  Follow the steps detailed in this https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-cloud-volumes-service-datastores[link^] to attach Cloud Volume Service datastores to Google Cloud VMware Engines hosts.
+* Google Cloud NetApp Volumes NFS volume should be mounted as a datastore in Google Cloud VMware Engine.  Follow the steps detailed in this https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-cloud-volumes-service-datastores[link^] to attach Google Cloud NetApp Volumes datastores to Google Cloud VMware Engines hosts.
 =====
 
 .High Level Architecture
@@ -259,15 +259,15 @@ The target CVS NFS datastore should have sufficient space to handle the migratio
 
 == Conclusion
 
-Whether you’re targeting all-cloud or hybrid cloud and data residing on any type/vendor storage in on-premises, Cloud Volume Service and HCX provide excellent options to deploy and migrate the application workloads while reducing the TCO by making the data requirements seamless to the application layer. Whatever the use case, choose Google Cloud VMware Engine along with Cloud Volume Service for rapid realization of cloud benefits, consistent infrastructure, and operations across on-premises and multiple clouds, bidirectional portability of workloads, and enterprise-grade capacity and performance. It is the same familiar process and procedures used to connect the storage and migrate VMs using VMware vSphere Replication, VMware vMotion, or even network file copy (NFC).
+Whether you’re targeting all-cloud or hybrid cloud and data residing on any type/vendor storage in on-premises, Google Cloud NetApp Volumes and HCX provide excellent options to deploy and migrate the application workloads while reducing the TCO by making the data requirements seamless to the application layer. Whatever the use case, choose Google Cloud VMware Engine along with Google Cloud NetApp Volumes for rapid realization of cloud benefits, consistent infrastructure, and operations across on-premises and multiple clouds, bidirectional portability of workloads, and enterprise-grade capacity and performance. It is the same familiar process and procedures used to connect the storage and migrate VMs using VMware vSphere Replication, VMware vMotion, or even network file copy (NFC).
 
 == Takeaways
 
 The key points of this document include:
 
-* You can now use Cloud Volume Service as a datastore on Google Cloud VMware Engine SDDC.
-* You can easily migrate data from on-premises to Cloud Volume Service datastore.
-* You can easily grow and shrink the Cloud Volume Service datastore to meet the capacity and performance requirements during migration activity.
+* You can now use Google Cloud NetApp Volumes as a datastore on Google Cloud VMware Engine SDDC.
+* You can easily migrate data from on-premises to Google Cloud NetApp Volumes datastore.
+* You can easily grow and shrink the Google Cloud NetApp Volumes datastore to meet the capacity and performance requirements during migration activity.
 
 == Videos from Google and VMware for reference
 
@@ -295,9 +295,9 @@ To learn more about the information described in this document, refer to the fol
 +
 https://cloud.google.com/vmware-engine/docs/overview/[https://cloud.google.com/vmware-engine/docs/overview^]
 
-* Cloud Volume Service documentation
+* Google Cloud NetApp Volumes documentation
 +
-https://cloud.google.com/architecture/partners/netapp-cloud-volumes[https://cloud.google.com/architecture/partners/netapp-cloud-volumes^]
+https://cloud.google.com/netapp/volumes/docs/discover/overview[https://cloud.google.com/netapp/volumes/docs/discover/overview^]
 
 * VMware HCX User Guide
 +
