@@ -64,9 +64,10 @@ View the detailed link:azure-native-nfs-datastore-option.html[supplemental NFS d
 
 Google Cloud supports NetApp storage in the following configurations:
 
+* Google Cloud NetApp Volumes as a supplemental NFS datastore
+* Google Cloud NetApp Volumes as guest connected storage
 * Cloud Volumes ONTAP (CVO) as guest connected storage
-* Cloud Volumes Service (CVS) as guest connected storage
-* Cloud Volumes Service (CVS) as a supplemental NFS datastore
+
 
 // tag::ehc-gcp[]
 View the detailed link:gcp-guest.html[guest connect storage options for GCVE].
@@ -76,7 +77,7 @@ View the detailed link:gcp-guest.html[guest connect storage options for GCVE].
 View the detailed link:gcp-guest.html[guest connect storage options for GCVE].
 // end::gcp[]
 
-Read more about link:https://www.netapp.com/blog/cloud-volumes-service-google-cloud-vmware-engine/[NetApp Cloud Volumes Service datastore support for Google Cloud VMware Engine (NetApp blog)^] or link:https://cloud.google.com/blog/products/compute/how-to-use-netapp-cvs-as-datastores-with-vmware-engine[How to use NetApp CVS as datastores for Google Cloud VMware Engine (Google blog)^]
+Read more about link:https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-cloud-volumes-datastores-gcve[Google Cloud NetApp Volumes datastore support for Google Cloud VMware Engine (Google documentation)^] 
 
 
 // end::gcp-datastore[]
